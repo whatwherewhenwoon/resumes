@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background-image-all {
+    background-image: url('/images/background.jpg');
+    background-size: cover;
+    height: 1000px;
+    /* Adjust the size of the background image */
+    background-repeat: no-repeat;
+    /* Prevent the background image from repeating */
+    /* You can add more CSS properties here to customize the background further */
+}
+
+/* Fontsize ขนาดcontainer ของพิกเซลที่น้อยกว่า992เพราะไม่มีจุดbreakpoint */
+.large-text {
+    font-size: 40px;
+    /* ปรับขนาดตัวอักษรเป็น 24 พิกเซล */
+
+}
+
+/* ด้านล่างคือ จุดbreakpoint เมื่อถึง992พิกเซลหรือมากกว่า คำสั่งด้านล่างจะถูกใช้งานแทนที่ */
+@media only screen and (min-width: 992px) {
+    .large-text {
+        font-size: 60px;
+        /* ปรับขนาดตัวอักษรเป็น 24 พิกเซล */
+
+    }
+
+    /* การปรับขยายขยายแพดดิ้งแบบเสริมโดยใช้เปอร์เซ็นต์ */
+    .pad-con{
+        /* padding: 0 250px; */
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+/*     
+    display flex หาเอาเองว่ามันทำงานยังไง  */
+    .navbar-list{
+        display: flex;
+        justify-content: end;
+    }
+  
+   .line-vertical{
+    border-left-style: solid;
+   } 
+   .line-hori-next{
+    display: none;
+    visibility: hidden;
+  }
+
+}
+
+.font-center {
+    font-family: 'Literata', serif;
+}
+
+.font-logo {
+    font-family: 'Nothing You Could Do', cursive;
+}
+
+.bg-ap {
+    background-color: #d6c7ac; /* Replace with your desired background color */
+    color: white; /* Set text color to white for contrast */
+}
+    
+.title-a {
+    text-align: center;
+}
+
+.large-text-a {
+    font-size: 35px;
+    /* ปรับขนาดตัวอักษรเป็น 24 พิกเซล */
+}
+
+.profile-size{
+    width: 300px; /* Set the width to 300 pixels */
+    height: 400px; /* Set the height to 200 pixels */
+}
+
+.centered-image {
+    display: block; /* Make the image a block element */
+    margin: 0 auto; /* Center horizontally by setting left and right margins to 'auto' */
+    text-align: center; /* Center horizontally within the parent element */
+}
+
+/* Optional: Style the image */
+.centered-image-1{
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    max-height: 100%; /* Ensure the image doesn't exceed its container's height */
+}
+
+.vertical {
+    border-left: 6px solid blue;
+    height: 200px;
+    position:absolute;
+    left: 50%;
+  }
+
+  
+  .circular-image {
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Adjust the size as needed */
+    object-fit: cover; /* Preserve aspect ratio and cover the circular area */
+  }
+
+
+  .large-text-bar {
+    font-size: 20px;
+    /* ปรับขนาดตัวอักษรเป็น 24 พิกเซล */
+}
+
+.line-hori {
+    border: 1px solid #fff;
+    opacity: 1;
+}
+
+
+#fadeout {
+    opacity: 1;
+    transition: 1s opacity;
+    text-align: center;
+    font-size:32px;
+  }
+
+
+  .line-hori-next{
+    border: 1px solid #fff;
+    opacity: 1;
+    display: block;
+  }
+
+
+  .pad-con{
+    padding-left: 1;
+    padding-right: 1;
+}
+
+.large-text-title {
+    font-size: 35px;
+    /* ปรับขนาดตัวอักษรเป็น 24 พิกเซล */
+}
+
+.font-title {font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.large-text-con {
+    font-size: 20px;
+    /* ปรับขนาดตัวอักษรเป็น 24 พิกเซล */
+}
+
+.bg-footer {
+    background-color: rgb(130, 119, 91); /* Replace with your desired background color */
+    color: white; /* Set text color to white for contrast */
+}
